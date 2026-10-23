@@ -32,6 +32,6 @@
     "src/collect.mjs": "7381be9d32de342c8e038cba7ad37a61a1b5bdb4a28dba6d98002cb9a103065a",
     "src/contract.mjs": "7e5892ca05b16685403d3b1b833546b60dd2a2f24a3787e355b263f3463f32cb",
     "src/read-api.mjs": "46173b0fc2dea8d453cf88e2128c07768f86844f42a806fb39daf3182c74f21c",
-    "src/store.mjs": "3fc867ccb5fe3d6f3fc678f11c9880c39c00a73000876ef232bebcceb257d077"
+    "src/store.mjs": "db7959fe85e8fbea448b6082f427f63a1d8fa37b5f0e983027ac1a94caefa3b2"
   }
 }
