@@ -1,0 +1,17 @@
+{
+  "name": "0x8dxd-inspired-polymarket-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "test": "node --test test/strategy.test.mjs",
+    "verify": "node tools/verify.mjs",
+    "demo": "node src/cli.mjs demo",
+    "replay": "node src/cli.mjs replay",
+    "scan": "node src/cli.mjs scan",
+    "dashboard": "node src/server.mjs"
+  }
+}

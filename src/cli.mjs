@@ -1,0 +1,6 @@
+import fs from 'node:fs';import {STRATEGY,NAME} from '../identity.mjs';import {evaluateStrategy,strategySettle,labReport} from './strategy.mjs';import {collect} from './collect.mjs';
+const [cmd,...args]=process.argv.slice(2),read=f=>JSON.parse(fs.readFileSync(f,'utf8'));
+if(cmd==='demo'){console.log(NAME+' | CONTROLLED TESTS');for(const s of read('data/scenarios.json')){const e=evaluateStrategy(STRATEGY,s.snapshots);if(s.settlement)strategySettle(e.state,'test-condition',s.settlement);console.log(s.id+' | '+e.state.events.map(x=>x.action).join(' -> ')+' | realized $'+labReport(e.state).realized.toFixed(4));}}
+else if(cmd==='replay'){const e=evaluateStrategy(STRATEGY,read(args[0]||'data/forward/snapshots.json'));console.log(JSON.stringify({strategy:NAME,snapshots:e.snapshotCount,actions:e.actions,report:e.report},null,2));}
+else if(cmd==='scan'){const option=(f,d)=>args.includes(f)?args[args.indexOf(f)+1]:d,cycles=Number(option('--cycles',24)),interval=Number(option('--interval',3000));if(!Number.isInteger(cycles)||cycles<1||cycles>50||interval<1000||interval>60000)throw Error('Use 1-50 cycles and 1000-60000ms intervals');await collect({cycles,interval,dir:option('--out','runs/new-capture')});}
+else console.log('Commands: demo, replay [snapshots.json], scan --out runs/name [--cycles 24 --interval 3000]');

@@ -1,0 +1,11 @@
+Build an original read-only 0x8dxd-inspired Polymarket strategy using the Predictefy API.
+
+Short-window Binance momentum plus high-priced Polymarket outcomes. A two-basis-point move over eight to fifteen seconds selects Up or Down. Require a 90-98.5-cent quote, depth and positive conditional winning surplus after reserves. Exit after thirty seconds or a two-percent adverse liquidation mark. This is a momentum hypothesis, not proven latency arbitrage.
+
+Use authenticated GET reads for market catalogs, paired outcome books and Binance reference data. Verify native condition/token IDs, resolution rules and fees. No signer, funding or live orders. Store the key in ignored .env and never send it to the browser.
+
+Separate $1,000 local ledger; ten-share requests; 25% depth participation; 0.1-cent price reserve; $20 per condition; $100 open cost. Five-second freshness, two-second book skew, reject future/synthetic/mismatched data. Actual fills determine basis, exit quantity and verified settlement. Preserve partial remainders; no averaging down or double fills.
+
+Freeze rules before collection, save source/receipt timestamps and credit headers, replay against the saved ledger, compare with no trade. Keep controlled tests separate from captured results. Include wins, losses, partial execution, stale data, cost gates, duplicate/restart and evidence-gated settlement tests. Do not tune parameters to make a saved capture win or claim private source-code recovery.
+
+Use a localhost-only trading-style dashboard, official Polymarket logo/blue and clear figures. Include original wallet responses, complete captured evidence, setup instructions and relevant Predictefy API/SDK documentation.

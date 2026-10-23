@@ -1,0 +1,37 @@
+{
+  "packagedAt": "2026-10-23T03:09:30.472Z",
+  "strategy": "ox",
+  "config": {
+    "bankroll": 1000,
+    "shares": 10,
+    "slippage": 0.001,
+    "participation": 0.25,
+    "maxAgeMs": 5000,
+    "maxSkewMs": 2000,
+    "futureMs": 500,
+    "marketBudget": 20,
+    "openBudget": 100,
+    "minRemainingMs": 45000,
+    "holdMs": 30000,
+    "stopFraction": 0.02,
+    "minMoveBps": 2,
+    "minSignalMs": 8000,
+    "maxSignalMs": 15000,
+    "minAsk": 0.9,
+    "maxAsk": 0.985,
+    "minWinningSurplus": 0.005,
+    "modelHaircut": 0.03,
+    "minModelEdge": 0.05,
+    "minCandles": 60
+  },
+  "originalCaptureFrozenAt": "2026-10-23T02:46:28.087Z",
+  "files": {
+    "identity.mjs": "1302eb1254dae09fba29d76511b83d53d2bd3a8aab44fa6c039a025a3be4b693",
+    "src/strategy.mjs": "5034e8a701ed1c3ffda76f6c7c112946dcacfd5b731936b1624355edf05a5472",
+    "src/engine.mjs": "d0b01d1ee6b1628a4401ee502c7023719bd2582821cc2d8dddec144739e8b514",
+    "src/collect.mjs": "7381be9d32de342c8e038cba7ad37a61a1b5bdb4a28dba6d98002cb9a103065a",
+    "src/contract.mjs": "7e5892ca05b16685403d3b1b833546b60dd2a2f24a3787e355b263f3463f32cb",
+    "src/read-api.mjs": "46173b0fc2dea8d453cf88e2128c07768f86844f42a806fb39daf3182c74f21c",
+    "src/store.mjs": "3fc867ccb5fe3d6f3fc678f11c9880c39c00a73000876ef232bebcceb257d077"
+  }
+}

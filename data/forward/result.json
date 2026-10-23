@@ -1,0 +1,22 @@
+{
+  "strategy": "ox",
+  "report": {
+    "cash": 1000,
+    "realized": 0,
+    "openCost": 0,
+    "liquidationMarkPnl": 0,
+    "openPositions": 0,
+    "positions": [],
+    "events": 48
+  },
+  "actions": {
+    "SKIP": 48
+  },
+  "startedAt": 1792723616830,
+  "endedAt": 1792723775925,
+  "sharedCollectionUsage": {
+    "requests": 220,
+    "credits": 989
+  },
+  "liveOrders": 0
+}

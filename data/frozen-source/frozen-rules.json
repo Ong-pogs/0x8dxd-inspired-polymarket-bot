@@ -1,0 +1,35 @@
+{
+  "frozenAt": "2026-10-23T02:46:28.087Z",
+  "config": {
+    "bankroll": 1000,
+    "shares": 10,
+    "slippage": 0.001,
+    "participation": 0.25,
+    "maxAgeMs": 5000,
+    "maxSkewMs": 2000,
+    "futureMs": 500,
+    "marketBudget": 20,
+    "openBudget": 100,
+    "minRemainingMs": 45000,
+    "holdMs": 30000,
+    "stopFraction": 0.02,
+    "minMoveBps": 2,
+    "minSignalMs": 8000,
+    "maxSignalMs": 15000,
+    "minAsk": 0.9,
+    "maxAsk": 0.985,
+    "minWinningSurplus": 0.005,
+    "modelHaircut": 0.03,
+    "minModelEdge": 0.05,
+    "minCandles": 60
+  },
+  "files": {
+    "THREE-BOTS.md": "fb621fa1c1f74147e8becacb3c7db9429fb02a6911809e1b17a1fde709847547",
+    "src/strategies.mjs": "438710979e0c6848cc6684fe3d8960c0c92d89a7307f0a9c390c9c374a68f471",
+    "src/lab-api.mjs": "46173b0fc2dea8d453cf88e2128c07768f86844f42a806fb39daf3182c74f21c",
+    "src/lab-collect.mjs": "43eeae3455598aeb2aa9029e12ae084c14cf45def469906ef422413c065c1b8b",
+    "src/lab-scenarios.mjs": "ebdac78c9f1c8e74faefdfb1d0f864f037355218ff685d7bfbb3c69853fe7bc4",
+    "test/strategies.test.mjs": "987b882b32fec778d311fc86e4cb0c52fd0ce6c6591debae8bf8248703443cd3",
+    "test/lab-api.test.mjs": "ffc7ed856c8b389f5cb6adcd9e327de1b29ea1a5ca21198cf0ce36b440061e50"
+  }
+}

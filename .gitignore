@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+node_modules/
+data/private/
+runs/
+tmp/
+*.log
+tools/probe.mjs
+tools/inspect-live.mjs
+tools/wallet-evidence.mjs
+tools/check-ui.mjs

@@ -1,0 +1,921 @@
+{
+  "state": {
+    "version": 1,
+    "strategy": "ox",
+    "cash": 1000,
+    "initialCash": 1000,
+    "positions": {},
+    "seen": [
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:0",
+        "digest": "cb1c477497d4c1f3b2b66b1004d94cb2f849093fc2fa7817be28cc2f72e30604"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:0",
+        "digest": "cbdb6c0d8f815129edf5fc17cc83c7cd9e8a7ee100ce86a02c1c7c0f3216441f"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:1",
+        "digest": "07694e8221c6d13f2a9c3520d83a44dac28624db04a4106a433a36086acb298f"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:1",
+        "digest": "82dec8bff278e27aec7326e2f219aa22b7e418ebc3819e713443883ee735fe7c"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:2",
+        "digest": "4507b434e1e84e8e83b2698265f82328d87064d6b79669e60d61f260511967e5"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:2",
+        "digest": "2c53b4f77170dd977befe014ba64af526ed6f8beb661593ae45842cf138e7762"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:3",
+        "digest": "06d3ecf19e6fe81f33b5351b739d40f3698864c2e1beab237b93eb351cb6d2a4"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:3",
+        "digest": "9aa38dd253fb2e5ed0fd1890b753b76bcae87a5f3b4be77dee2ff63bd7078b26"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:4",
+        "digest": "f6d3e97312fa2e1d089ccd69a55df34f9e160f72952c172ab7bf87a1976b2b8a"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:4",
+        "digest": "534e9e6cded18fccbcf6d38ea7eedcd116d303b60d61fa79bc3ce1bd2dc0bfea"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:5",
+        "digest": "4d543f1c8d340b28432b38fe8c76f1201f21fb8d368b4e9201bf1091294fd625"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:5",
+        "digest": "64ec54315b292aea8d08727e20727de291b3df4701112bf9620d4a6dcb9464e2"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:6",
+        "digest": "eb35554b33ea5e7b268e6a94c88bc4dbf6b7ac522e74327b3948ec5c211ac195"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:6",
+        "digest": "67a205769ca66270a08ed97b243dd50ddc8c50b500826efc0fa068c536f392f9"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:7",
+        "digest": "7128bd5fc06ad18779e14091341d0cb8861a409e016ab4616fdd25b91ecc4bec"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:7",
+        "digest": "596a01cf75967149b2ed332b919a7c22132e8ded09062eca310cbf958670b110"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:8",
+        "digest": "fb3259e19856bcfba1aa7566fe9c8d61766c8b2359502765f2e23d0ec555d6f3"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:8",
+        "digest": "249603efa1dc255c7a3c8d7b6893d0f8d64dfd8c34315fde813267431b5e72f1"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:9",
+        "digest": "51570f788ea83b166df691078a4d23c9e27cf9086aa3697b3d9fdbc9d2caf115"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:9",
+        "digest": "ad072cdc01d3073cb90e88d2c0019d3abb8301c854893682d51881f5c1ed7fcd"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:10",
+        "digest": "0b65ae395450013cf55d08166802a78dd60dd8d2e545f36fa52e5488788009c0"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:10",
+        "digest": "11e878b8c8a60144b89f6e6d7d98d3ce9b43fe7074efd314163d31016d86c022"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:11",
+        "digest": "1c9bec71fd78aaf2d500d3b808ecd99ec88459bc8c37d1b1b94dc41418aa12a6"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:11",
+        "digest": "fbee5545fe6c255e41e5e5ce8f3d1ff67551d600af139bee00a3efff36a09259"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:12",
+        "digest": "4e1cb3d5aea6d03e66706b395b99f8f242fcf96e1f4cf87e5de49ce25fe5ce08"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:12",
+        "digest": "9b35375574d0e2abe63e8bb3e82a47712c4f579ac3ffbd296b076612c0dafcd9"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:13",
+        "digest": "63b6dc9cb53b1930072f1a727c838b2c7e2714ea85ed2914b4fc0d903f90fda9"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:13",
+        "digest": "05185f200d7b1dba02ae0b48f9d87f30ef5b0df5ec133176fa116db1b012cbea"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:14",
+        "digest": "5a8f9336dca3eac30faa93fff48c191a08f67c42fbf6638a99b133d641181d42"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:14",
+        "digest": "0dd442463d52bcdcc7b85383a5149bb91cb661f99489ccfbafd6fb0ca67f5adc"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:15",
+        "digest": "fbc602d846ea5bd7e2457c7755b7ab993ce4eaf5238c57be41b54577ed821449"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:15",
+        "digest": "234a8284fc448e09c663adecd61e27f7137afe6d486e3fd72c58ede152bf07e6"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:16",
+        "digest": "af0709e8745ab8137a8f2377c915ffa06c35da0888058acfa6a8a59294132e9e"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:16",
+        "digest": "561caeebe982f30d3373795d00b5a39f5eabc10ec2b94a3eec4c2a4eed938187"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:17",
+        "digest": "853a98c18b396a0f82e6ea3aeea514ed844a305e0fbedb5d2d63c018f8bf271c"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:17",
+        "digest": "ce496f256151b7574f062f25197efce467bf562851f0965f4594c942dd05fdc9"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:18",
+        "digest": "4387b11e3f1529bd59a31d1fca4caa99fb598459ae83943cfd0890fc31067138"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:18",
+        "digest": "b4f9930a1fc0131ad1e1c6f6dd3e75ea29281290c7afab73034f9286de71f131"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:19",
+        "digest": "39e1d6093c27ba7acd04e077deda646aae75b08e52ae0fe16aa758d16fc1dbd2"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:19",
+        "digest": "c6fc186195484df827d41e83aed8756c2d5c80b8da6509fe1e2d6400389a1ec9"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:20",
+        "digest": "34f47f012930741d194db701614ee6b9f90a4b7fe7751f4b2712cc11efc6bd59"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:20",
+        "digest": "b683415e89bfddc076f7bcb549445662b4846278a3a20e083148c159e9d8ef9e"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:21",
+        "digest": "e076550cdb220da4fbb0deaef1109873d63c869afddde7053d1a1d940e2d484c"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:21",
+        "digest": "9f46b7b94dc27584022315fe52f7074ded7c2bfe228a1434f5d65e1c80c33892"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:22",
+        "digest": "952754dbcae139d0e4af9f487c862fc6f18a3b19e75a9b8f5c45b5e9b3efa22a"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:22",
+        "digest": "238973d99b298530befbab0788accab96a6ea815108ae8d32fd4973eccb5eb67"
+      },
+      {
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:23",
+        "digest": "fa9c97e96c704ac63613507fb076d5c4208cc00a247d47e6d58f7bb90ebef902"
+      },
+      {
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:23",
+        "digest": "967c6591765b13d9ad63d83b4204b39ab218f05c568f850c76c0177da7bfbd2f"
+      }
+    ],
+    "events": [
+      {
+        "index": 0,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:0",
+        "now": 1792723616830,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "SIGNAL_WARMUP"
+      },
+      {
+        "index": 1,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:0",
+        "now": 1792723618141,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "SIGNAL_WARMUP"
+      },
+      {
+        "index": 2,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:1",
+        "now": 1792723624703,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -0.8194325936083935,
+          "from": 1792723615001,
+          "to": 1792723623012,
+          "leg": 1,
+          "spanMs": 8011
+        }
+      },
+      {
+        "index": 3,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:1",
+        "now": 1792723625246,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -0.8194325936083935,
+          "from": 1792723615001,
+          "to": 1792723623012,
+          "leg": 1,
+          "spanMs": 8011
+        }
+      },
+      {
+        "index": 4,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:2",
+        "now": 1792723630798,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "SIGNAL_WARMUP"
+      },
+      {
+        "index": 5,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:2",
+        "now": 1792723631219,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "SIGNAL_WARMUP"
+      },
+      {
+        "index": 6,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:3",
+        "now": 1792723636026,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "HIGH_PRICE_FILTER",
+        "signal": {
+          "moveBps": 2.3082779733352154,
+          "from": 1792723623012,
+          "to": 1792723635013,
+          "leg": 0,
+          "spanMs": 12001
+        }
+      },
+      {
+        "index": 7,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:3",
+        "now": 1792723636432,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "HIGH_PRICE_FILTER",
+        "signal": {
+          "moveBps": 2.3082779733352154,
+          "from": 1792723623012,
+          "to": 1792723635013,
+          "leg": 0,
+          "spanMs": 12001
+        }
+      },
+      {
+        "index": 8,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:4",
+        "now": 1792723641464,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": 1.2822432271297757,
+          "from": 1792723630013,
+          "to": 1792723640013,
+          "leg": 0,
+          "spanMs": 10000
+        }
+      },
+      {
+        "index": 9,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:4",
+        "now": 1792723642011,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": 1.2822432271297757,
+          "from": 1792723630013,
+          "to": 1792723640013,
+          "leg": 0,
+          "spanMs": 10000
+        }
+      },
+      {
+        "index": 10,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:5",
+        "now": 1792723648661,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -0.6984287307210124,
+          "from": 1792723635013,
+          "to": 1792723647010,
+          "leg": 1,
+          "spanMs": 11997
+        }
+      },
+      {
+        "index": 11,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:5",
+        "now": 1792723649409,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -0.6984287307210124,
+          "from": 1792723635013,
+          "to": 1792723647010,
+          "leg": 1,
+          "spanMs": 11997
+        }
+      },
+      {
+        "index": 12,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:6",
+        "now": 1792723655845,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -0.7130800368859713,
+          "from": 1792723640013,
+          "to": 1792723654001,
+          "leg": 1,
+          "spanMs": 13988
+        }
+      },
+      {
+        "index": 13,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:6",
+        "now": 1792723656649,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -0.7130800368859713,
+          "from": 1792723640013,
+          "to": 1792723654001,
+          "leg": 1,
+          "spanMs": 13988
+        }
+      },
+      {
+        "index": 14,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:7",
+        "now": 1792723663689,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": 0.13188036985134488,
+          "from": 1792723654001,
+          "to": 1792723662001,
+          "leg": 0,
+          "spanMs": 8000
+        }
+      },
+      {
+        "index": 15,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:7",
+        "now": 1792723664220,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": 0.13188036985134488,
+          "from": 1792723654001,
+          "to": 1792723662001,
+          "leg": 0,
+          "spanMs": 8000
+        }
+      },
+      {
+        "index": 16,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:8",
+        "now": 1792723670068,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": 0.7876188755018276,
+          "from": 1792723654001,
+          "to": 1792723668007,
+          "leg": 0,
+          "spanMs": 14006
+        }
+      },
+      {
+        "index": 17,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:8",
+        "now": 1792723670536,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": 0.7876188755018276,
+          "from": 1792723654001,
+          "to": 1792723668007,
+          "leg": 0,
+          "spanMs": 14006
+        }
+      },
+      {
+        "index": 18,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:9",
+        "now": 1792723675335,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": 0.654508759427852,
+          "from": 1792723662001,
+          "to": 1792723674010,
+          "leg": 0,
+          "spanMs": 12009
+        }
+      },
+      {
+        "index": 19,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:9",
+        "now": 1792723675738,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": 0.654508759427852,
+          "from": 1792723662001,
+          "to": 1792723674010,
+          "leg": 0,
+          "spanMs": 12009
+        }
+      },
+      {
+        "index": 20,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:10",
+        "now": 1792723680859,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -0.3785156934443812,
+          "from": 1792723668007,
+          "to": 1792723680008,
+          "leg": 1,
+          "spanMs": 12001
+        }
+      },
+      {
+        "index": 21,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:10",
+        "now": 1792723681539,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -0.3785156934443812,
+          "from": 1792723668007,
+          "to": 1792723680008,
+          "leg": 1,
+          "spanMs": 12001
+        }
+      },
+      {
+        "index": 22,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:11",
+        "now": 1792723687482,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -0.9377422195466778,
+          "from": 1792723674010,
+          "to": 1792723686011,
+          "leg": 1,
+          "spanMs": 12001
+        }
+      },
+      {
+        "index": 23,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:11",
+        "now": 1792723688090,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -0.9377422195466778,
+          "from": 1792723674010,
+          "to": 1792723686011,
+          "leg": 1,
+          "spanMs": 12001
+        }
+      },
+      {
+        "index": 24,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:12",
+        "now": 1792723695623,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -1.3700344645484197,
+          "from": 1792723680008,
+          "to": 1792723694001,
+          "leg": 1,
+          "spanMs": 13993
+        }
+      },
+      {
+        "index": 25,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:12",
+        "now": 1792723696240,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -1.3700344645484197,
+          "from": 1792723680008,
+          "to": 1792723694001,
+          "leg": 1,
+          "spanMs": 13993
+        }
+      },
+      {
+        "index": 26,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:13",
+        "now": 1792723702182,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -0.8083900631039587,
+          "from": 1792723686011,
+          "to": 1792723701001,
+          "leg": 1,
+          "spanMs": 14990
+        }
+      },
+      {
+        "index": 27,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:13",
+        "now": 1792723702845,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -0.8083900631039587,
+          "from": 1792723686011,
+          "to": 1792723701001,
+          "leg": 1,
+          "spanMs": 14990
+        }
+      },
+      {
+        "index": 28,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:14",
+        "now": 1792723709494,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -0.47139551268116087,
+          "from": 1792723694001,
+          "to": 1792723708010,
+          "leg": 1,
+          "spanMs": 14009
+        }
+      },
+      {
+        "index": 29,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:14",
+        "now": 1792723709891,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -0.47139551268116087,
+          "from": 1792723694001,
+          "to": 1792723708010,
+          "leg": 1,
+          "spanMs": 14009
+        }
+      },
+      {
+        "index": 30,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:15",
+        "now": 1792723716217,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "COST_EXCEEDS_WINNING_PAYOUT",
+        "signal": {
+          "moveBps": 2.8283727306765982,
+          "from": 1792723701001,
+          "to": 1792723715006,
+          "leg": 0,
+          "spanMs": 14005
+        },
+        "quote": {
+          "side": "buy",
+          "requested": 10,
+          "shares": 10,
+          "gross": 9.51,
+          "fees": 0.951,
+          "total": 10.461,
+          "vwap": 0.951,
+          "fills": [
+            {
+              "size": 10,
+              "price": 0.951,
+              "fee": 0.951,
+              "bookPrice": 0.95
+            }
+          ]
+        }
+      },
+      {
+        "index": 31,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:15",
+        "now": 1792723716610,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "HIGH_PRICE_FILTER",
+        "signal": {
+          "moveBps": 2.8283727306765982,
+          "from": 1792723701001,
+          "to": 1792723715006,
+          "leg": 0,
+          "spanMs": 14005
+        }
+      },
+      {
+        "index": 32,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:16",
+        "now": 1792723721629,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "COST_EXCEEDS_WINNING_PAYOUT",
+        "signal": {
+          "moveBps": 4.43328077310623,
+          "from": 1792723708010,
+          "to": 1792723720004,
+          "leg": 0,
+          "spanMs": 11994
+        },
+        "quote": {
+          "side": "buy",
+          "requested": 10,
+          "shares": 10,
+          "gross": 9.71,
+          "fees": 0.971,
+          "total": 10.681,
+          "vwap": 0.9710000000000001,
+          "fills": [
+            {
+              "size": 10,
+              "price": 0.971,
+              "fee": 0.971,
+              "bookPrice": 0.97
+            }
+          ]
+        }
+      },
+      {
+        "index": 33,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:16",
+        "now": 1792723722094,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "HIGH_PRICE_FILTER",
+        "signal": {
+          "moveBps": 4.43328077310623,
+          "from": 1792723708010,
+          "to": 1792723720004,
+          "leg": 0,
+          "spanMs": 11994
+        }
+      },
+      {
+        "index": 34,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:17",
+        "now": 1792723727565,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": 1.1317617269201996,
+          "from": 1792723715006,
+          "to": 1792723726001,
+          "leg": 0,
+          "spanMs": 10995
+        }
+      },
+      {
+        "index": 35,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:17",
+        "now": 1792723728088,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": 1.1317617269201996,
+          "from": 1792723715006,
+          "to": 1792723726001,
+          "leg": 0,
+          "spanMs": 10995
+        }
+      },
+      {
+        "index": 36,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:18",
+        "now": 1792723734729,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -0.0012207482769088784,
+          "from": 1792723720004,
+          "to": 1792723733007,
+          "leg": 1,
+          "spanMs": 13003
+        }
+      },
+      {
+        "index": 37,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:18",
+        "now": 1792723735662,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -0.0012207482769088784,
+          "from": 1792723720004,
+          "to": 1792723733007,
+          "leg": 1,
+          "spanMs": 13003
+        }
+      },
+      {
+        "index": 38,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:19",
+        "now": 1792723741992,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -1.6394651364026736,
+          "from": 1792723733007,
+          "to": 1792723741012,
+          "leg": 1,
+          "spanMs": 8005
+        }
+      },
+      {
+        "index": 39,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:19",
+        "now": 1792723742555,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -1.6394651364026736,
+          "from": 1792723733007,
+          "to": 1792723741012,
+          "leg": 1,
+          "spanMs": 8005
+        }
+      },
+      {
+        "index": 40,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:20",
+        "now": 1792723748155,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -1.6382443879769948,
+          "from": 1792723733007,
+          "to": 1792723747005,
+          "leg": 1,
+          "spanMs": 13998
+        }
+      },
+      {
+        "index": 41,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:20",
+        "now": 1792723748661,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": -1.6382443879769948,
+          "from": 1792723733007,
+          "to": 1792723747005,
+          "leg": 1,
+          "spanMs": 13998
+        }
+      },
+      {
+        "index": 42,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:21",
+        "now": 1792723753769,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": 0,
+          "from": 1792723741012,
+          "to": 1792723753004,
+          "leg": 0,
+          "spanMs": 11992
+        }
+      },
+      {
+        "index": 43,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:21",
+        "now": 1792723754381,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": 0,
+          "from": 1792723741012,
+          "to": 1792723753004,
+          "leg": 0,
+          "spanMs": 11992
+        }
+      },
+      {
+        "index": 44,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:22",
+        "now": 1792723760452,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "TOO_CLOSE_TO_RESOLUTION"
+      },
+      {
+        "index": 45,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:22",
+        "now": 1792723761888,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": 0,
+          "from": 1792723747005,
+          "to": 1792723758013,
+          "leg": 0,
+          "spanMs": 11008
+        }
+      },
+      {
+        "index": 46,
+        "id": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff:23",
+        "now": 1792723771522,
+        "marketId": "0x9b03dab1492ff9299aa46daab4d9d1689848a0f23284205e88672b9837fa5eff",
+        "action": "SKIP",
+        "reason": "TOO_CLOSE_TO_RESOLUTION"
+      },
+      {
+        "index": 47,
+        "id": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112:23",
+        "now": 1792723773117,
+        "marketId": "0x61b0b1eb5abe06f21d501adf4c2c516b889e2a95ae331afc7dbaa0fef0609112",
+        "action": "SKIP",
+        "reason": "STALE_REFERENCE"
+      }
+    ],
+    "realized": 0,
+    "lastNow": 1792723773117
+  },
+  "report": {
+    "cash": 1000,
+    "realized": 0,
+    "openCost": 0,
+    "liquidationMarkPnl": 0,
+    "openPositions": 0,
+    "positions": [],
+    "events": 48
+  }
+}

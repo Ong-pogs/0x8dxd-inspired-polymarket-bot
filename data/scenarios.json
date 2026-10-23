@@ -1,0 +1,1406 @@
+[
+  {
+    "id": "ox-win",
+    "strategy": "ox",
+    "title": "High-price winner",
+    "snapshots": [
+      {
+        "id": "directional-1",
+        "now": 1792713600000,
+        "origin": "deterministic-test",
+        "market": {
+          "id": "test-condition",
+          "title": "Bitcoin Up or Down — deterministic test",
+          "status": "open",
+          "end": 1792713900000,
+          "verified": true,
+          "negRisk": false,
+          "tokens": [
+            "test-up",
+            "test-down"
+          ],
+          "labels": [
+            "Up",
+            "Down"
+          ],
+          "fee": {
+            "mode": "reserve",
+            "curveRate": 0.07,
+            "notionalRate": 0
+          }
+        },
+        "books": [
+          {
+            "token": "test-up",
+            "timestamp": 1792713600000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.95,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.948,
+                "size": 100
+              }
+            ]
+          },
+          {
+            "token": "test-down",
+            "timestamp": 1792713600000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.05,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.048,
+                "size": 100
+              }
+            ]
+          }
+        ],
+        "reference": {
+          "symbol": "BTC/USDT",
+          "source": "fixture",
+          "price": 100000,
+          "timestamp": 1792713600000
+        },
+        "referenceHistory": [
+          {
+            "symbol": "BTC/USDT",
+            "source": "fixture",
+            "price": 99950.02498750626,
+            "timestamp": 1792713590000
+          }
+        ]
+      }
+    ],
+    "settlement": {
+      "verified": true,
+      "closed": true,
+      "conditionId": "test-condition",
+      "tokens": [
+        {
+          "id": "test-up",
+          "winner": true
+        },
+        {
+          "id": "test-down",
+          "winner": false
+        }
+      ],
+      "at": 1792800001000
+    },
+    "expectedEvents": [
+      {
+        "index": 0,
+        "id": "directional-1",
+        "now": 1792713600000,
+        "marketId": "test-condition",
+        "action": "BUY",
+        "leg": 0,
+        "label": "Up",
+        "quote": {
+          "side": "buy",
+          "requested": 10,
+          "shares": 10,
+          "gross": 9.51,
+          "fees": 0.0327,
+          "total": 9.5427,
+          "vwap": 0.951,
+          "fills": [
+            {
+              "size": 10,
+              "price": 0.951,
+              "fee": 0.0327,
+              "bookPrice": 0.95
+            }
+          ]
+        },
+        "signal": {
+          "moveBps": 4.999999999999449,
+          "from": 1792713590000,
+          "to": 1792713600000,
+          "leg": 0,
+          "spanMs": 10000
+        },
+        "netEdge": null
+      }
+    ],
+    "expectedReport": {
+      "cash": 1000.4573,
+      "realized": 0.4573,
+      "openCost": 0,
+      "liquidationMarkPnl": 0.4573,
+      "openPositions": 0,
+      "positions": [
+        {
+          "id": "test-condition",
+          "title": "Bitcoin Up or Down — deterministic test",
+          "tokens": [
+            "test-up",
+            "test-down"
+          ],
+          "leg": 0,
+          "label": "Up",
+          "shares": 0,
+          "cost": 0,
+          "fee": {
+            "mode": "reserve",
+            "curveRate": 0.07,
+            "notionalRate": 0
+          },
+          "config": {
+            "bankroll": 1000,
+            "shares": 10,
+            "slippage": 0.001,
+            "participation": 0.25,
+            "maxAgeMs": 5000,
+            "maxSkewMs": 2000,
+            "futureMs": 500,
+            "marketBudget": 20,
+            "openBudget": 100,
+            "minRemainingMs": 45000,
+            "holdMs": 30000,
+            "stopFraction": 0.02,
+            "minMoveBps": 2,
+            "minSignalMs": 8000,
+            "maxSignalMs": 15000,
+            "minAsk": 0.9,
+            "maxAsk": 0.985,
+            "minWinningSurplus": 0.005,
+            "modelHaircut": 0.03,
+            "minModelEdge": 0.05,
+            "minCandles": 60
+          },
+          "enteredAt": 1792713600000,
+          "realized": 0.4573,
+          "settled": true,
+          "liquidationValue": 0,
+          "liquidatableShares": 0,
+          "unfilledExitShares": 0,
+          "conditionalWinningSurplus": 0
+        }
+      ],
+      "events": 2
+    }
+  },
+  {
+    "id": "ox-loss",
+    "strategy": "ox",
+    "title": "One loss wipes out many small wins",
+    "snapshots": [
+      {
+        "id": "directional-1",
+        "now": 1792713600000,
+        "origin": "deterministic-test",
+        "market": {
+          "id": "test-condition",
+          "title": "Bitcoin Up or Down — deterministic test",
+          "status": "open",
+          "end": 1792713900000,
+          "verified": true,
+          "negRisk": false,
+          "tokens": [
+            "test-up",
+            "test-down"
+          ],
+          "labels": [
+            "Up",
+            "Down"
+          ],
+          "fee": {
+            "mode": "reserve",
+            "curveRate": 0.07,
+            "notionalRate": 0
+          }
+        },
+        "books": [
+          {
+            "token": "test-up",
+            "timestamp": 1792713600000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.95,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.948,
+                "size": 100
+              }
+            ]
+          },
+          {
+            "token": "test-down",
+            "timestamp": 1792713600000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.05,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.048,
+                "size": 100
+              }
+            ]
+          }
+        ],
+        "reference": {
+          "symbol": "BTC/USDT",
+          "source": "fixture",
+          "price": 100000,
+          "timestamp": 1792713600000
+        },
+        "referenceHistory": [
+          {
+            "symbol": "BTC/USDT",
+            "source": "fixture",
+            "price": 99950.02498750626,
+            "timestamp": 1792713590000
+          }
+        ]
+      }
+    ],
+    "settlement": {
+      "verified": true,
+      "closed": true,
+      "conditionId": "test-condition",
+      "tokens": [
+        {
+          "id": "test-up",
+          "winner": false
+        },
+        {
+          "id": "test-down",
+          "winner": true
+        }
+      ],
+      "at": 1792800001000
+    },
+    "expectedEvents": [
+      {
+        "index": 0,
+        "id": "directional-1",
+        "now": 1792713600000,
+        "marketId": "test-condition",
+        "action": "BUY",
+        "leg": 0,
+        "label": "Up",
+        "quote": {
+          "side": "buy",
+          "requested": 10,
+          "shares": 10,
+          "gross": 9.51,
+          "fees": 0.0327,
+          "total": 9.5427,
+          "vwap": 0.951,
+          "fills": [
+            {
+              "size": 10,
+              "price": 0.951,
+              "fee": 0.0327,
+              "bookPrice": 0.95
+            }
+          ]
+        },
+        "signal": {
+          "moveBps": 4.999999999999449,
+          "from": 1792713590000,
+          "to": 1792713600000,
+          "leg": 0,
+          "spanMs": 10000
+        },
+        "netEdge": null
+      }
+    ],
+    "expectedReport": {
+      "cash": 990.4573,
+      "realized": -9.5427,
+      "openCost": 0,
+      "liquidationMarkPnl": -9.5427,
+      "openPositions": 0,
+      "positions": [
+        {
+          "id": "test-condition",
+          "title": "Bitcoin Up or Down — deterministic test",
+          "tokens": [
+            "test-up",
+            "test-down"
+          ],
+          "leg": 0,
+          "label": "Up",
+          "shares": 0,
+          "cost": 0,
+          "fee": {
+            "mode": "reserve",
+            "curveRate": 0.07,
+            "notionalRate": 0
+          },
+          "config": {
+            "bankroll": 1000,
+            "shares": 10,
+            "slippage": 0.001,
+            "participation": 0.25,
+            "maxAgeMs": 5000,
+            "maxSkewMs": 2000,
+            "futureMs": 500,
+            "marketBudget": 20,
+            "openBudget": 100,
+            "minRemainingMs": 45000,
+            "holdMs": 30000,
+            "stopFraction": 0.02,
+            "minMoveBps": 2,
+            "minSignalMs": 8000,
+            "maxSignalMs": 15000,
+            "minAsk": 0.9,
+            "maxAsk": 0.985,
+            "minWinningSurplus": 0.005,
+            "modelHaircut": 0.03,
+            "minModelEdge": 0.05,
+            "minCandles": 60
+          },
+          "enteredAt": 1792713600000,
+          "realized": -9.5427,
+          "settled": true,
+          "liquidationValue": 0,
+          "liquidatableShares": 0,
+          "unfilledExitShares": 0,
+          "conditionalWinningSurplus": 0
+        }
+      ],
+      "events": 2
+    }
+  },
+  {
+    "id": "ox-stop",
+    "strategy": "ox",
+    "title": "The adverse move triggers an exit",
+    "snapshots": [
+      {
+        "id": "directional-1",
+        "now": 1792713600000,
+        "origin": "deterministic-test",
+        "market": {
+          "id": "test-condition",
+          "title": "Bitcoin Up or Down — deterministic test",
+          "status": "open",
+          "end": 1792713900000,
+          "verified": true,
+          "negRisk": false,
+          "tokens": [
+            "test-up",
+            "test-down"
+          ],
+          "labels": [
+            "Up",
+            "Down"
+          ],
+          "fee": {
+            "mode": "reserve",
+            "curveRate": 0.07,
+            "notionalRate": 0
+          }
+        },
+        "books": [
+          {
+            "token": "test-up",
+            "timestamp": 1792713600000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.95,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.948,
+                "size": 100
+              }
+            ]
+          },
+          {
+            "token": "test-down",
+            "timestamp": 1792713600000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.05,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.048,
+                "size": 100
+              }
+            ]
+          }
+        ],
+        "reference": {
+          "symbol": "BTC/USDT",
+          "source": "fixture",
+          "price": 100000,
+          "timestamp": 1792713600000
+        },
+        "referenceHistory": [
+          {
+            "symbol": "BTC/USDT",
+            "source": "fixture",
+            "price": 99950.02498750626,
+            "timestamp": 1792713590000
+          }
+        ]
+      },
+      {
+        "id": "stop",
+        "now": 1792713610000,
+        "origin": "deterministic-test",
+        "market": {
+          "id": "test-condition",
+          "title": "Bitcoin Up or Down — deterministic test",
+          "status": "open",
+          "end": 1792713900000,
+          "verified": true,
+          "negRisk": false,
+          "tokens": [
+            "test-up",
+            "test-down"
+          ],
+          "labels": [
+            "Up",
+            "Down"
+          ],
+          "fee": {
+            "mode": "reserve",
+            "curveRate": 0.07,
+            "notionalRate": 0
+          }
+        },
+        "books": [
+          {
+            "token": "test-up",
+            "timestamp": 1792713610000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.91,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.908,
+                "size": 100
+              }
+            ]
+          },
+          {
+            "token": "test-down",
+            "timestamp": 1792713610000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.09,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.088,
+                "size": 100
+              }
+            ]
+          }
+        ],
+        "reference": {
+          "symbol": "BTC/USDT",
+          "source": "fixture",
+          "price": 100000,
+          "timestamp": 1792713610000
+        },
+        "referenceHistory": [
+          {
+            "symbol": "BTC/USDT",
+            "source": "fixture",
+            "price": 99950.02498750626,
+            "timestamp": 1792713600000
+          }
+        ]
+      }
+    ],
+    "expectedEvents": [
+      {
+        "index": 0,
+        "id": "directional-1",
+        "now": 1792713600000,
+        "marketId": "test-condition",
+        "action": "BUY",
+        "leg": 0,
+        "label": "Up",
+        "quote": {
+          "side": "buy",
+          "requested": 10,
+          "shares": 10,
+          "gross": 9.51,
+          "fees": 0.0327,
+          "total": 9.5427,
+          "vwap": 0.951,
+          "fills": [
+            {
+              "size": 10,
+              "price": 0.951,
+              "fee": 0.0327,
+              "bookPrice": 0.95
+            }
+          ]
+        },
+        "signal": {
+          "moveBps": 4.999999999999449,
+          "from": 1792713590000,
+          "to": 1792713600000,
+          "leg": 0,
+          "spanMs": 10000
+        },
+        "netEdge": null
+      },
+      {
+        "index": 1,
+        "id": "stop",
+        "now": 1792713610000,
+        "marketId": "test-condition",
+        "action": "EXIT",
+        "reason": "STOP_LOSS",
+        "quote": {
+          "side": "sell",
+          "requested": 10,
+          "shares": 10,
+          "gross": 9.07,
+          "fees": 0.0591,
+          "total": 9.0109,
+          "vwap": 0.907,
+          "fills": [
+            {
+              "size": 10,
+              "price": 0.907,
+              "fee": 0.0591,
+              "bookPrice": 0.908
+            }
+          ]
+        },
+        "realized": -0.5318,
+        "remainingShares": 0
+      }
+    ],
+    "expectedReport": {
+      "cash": 999.4682,
+      "realized": -0.5318,
+      "openCost": 0,
+      "liquidationMarkPnl": -0.5318,
+      "openPositions": 0,
+      "positions": [
+        {
+          "id": "test-condition",
+          "title": "Bitcoin Up or Down — deterministic test",
+          "tokens": [
+            "test-up",
+            "test-down"
+          ],
+          "leg": 0,
+          "label": "Up",
+          "shares": 0,
+          "cost": 0,
+          "fee": {
+            "mode": "reserve",
+            "curveRate": 0.07,
+            "notionalRate": 0
+          },
+          "config": {
+            "bankroll": 1000,
+            "shares": 10,
+            "slippage": 0.001,
+            "participation": 0.25,
+            "maxAgeMs": 5000,
+            "maxSkewMs": 2000,
+            "futureMs": 500,
+            "marketBudget": 20,
+            "openBudget": 100,
+            "minRemainingMs": 45000,
+            "holdMs": 30000,
+            "stopFraction": 0.02,
+            "minMoveBps": 2,
+            "minSignalMs": 8000,
+            "maxSignalMs": 15000,
+            "minAsk": 0.9,
+            "maxAsk": 0.985,
+            "minWinningSurplus": 0.005,
+            "modelHaircut": 0.03,
+            "minModelEdge": 0.05,
+            "minCandles": 60
+          },
+          "enteredAt": 1792713600000,
+          "realized": -0.5318,
+          "settled": false,
+          "exiting": true,
+          "liquidationValue": 0,
+          "liquidatableShares": 0,
+          "unfilledExitShares": 0,
+          "conditionalWinningSurplus": 0
+        }
+      ],
+      "events": 2
+    }
+  },
+  {
+    "id": "ox-partial",
+    "strategy": "ox",
+    "title": "Only three shares fill",
+    "snapshots": [
+      {
+        "id": "directional-1",
+        "now": 1792713600000,
+        "origin": "deterministic-test",
+        "market": {
+          "id": "test-condition",
+          "title": "Bitcoin Up or Down — deterministic test",
+          "status": "open",
+          "end": 1792713900000,
+          "verified": true,
+          "negRisk": false,
+          "tokens": [
+            "test-up",
+            "test-down"
+          ],
+          "labels": [
+            "Up",
+            "Down"
+          ],
+          "fee": {
+            "mode": "reserve",
+            "curveRate": 0.07,
+            "notionalRate": 0
+          }
+        },
+        "books": [
+          {
+            "token": "test-up",
+            "timestamp": 1792713600000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.95,
+                "size": 12
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.948,
+                "size": 100
+              }
+            ]
+          },
+          {
+            "token": "test-down",
+            "timestamp": 1792713600000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.05,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.048,
+                "size": 100
+              }
+            ]
+          }
+        ],
+        "reference": {
+          "symbol": "BTC/USDT",
+          "source": "fixture",
+          "price": 100000,
+          "timestamp": 1792713600000
+        },
+        "referenceHistory": [
+          {
+            "symbol": "BTC/USDT",
+            "source": "fixture",
+            "price": 99950.02498750626,
+            "timestamp": 1792713590000
+          }
+        ]
+      },
+      {
+        "id": "partial-exit",
+        "now": 1792713610000,
+        "origin": "deterministic-test",
+        "market": {
+          "id": "test-condition",
+          "title": "Bitcoin Up or Down — deterministic test",
+          "status": "open",
+          "end": 1792713900000,
+          "verified": true,
+          "negRisk": false,
+          "tokens": [
+            "test-up",
+            "test-down"
+          ],
+          "labels": [
+            "Up",
+            "Down"
+          ],
+          "fee": {
+            "mode": "reserve",
+            "curveRate": 0.07,
+            "notionalRate": 0
+          }
+        },
+        "books": [
+          {
+            "token": "test-up",
+            "timestamp": 1792713610000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.91,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.908,
+                "size": 4
+              }
+            ]
+          },
+          {
+            "token": "test-down",
+            "timestamp": 1792713610000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.09,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.088,
+                "size": 100
+              }
+            ]
+          }
+        ],
+        "reference": {
+          "symbol": "BTC/USDT",
+          "source": "fixture",
+          "price": 100000,
+          "timestamp": 1792713610000
+        },
+        "referenceHistory": [
+          {
+            "symbol": "BTC/USDT",
+            "source": "fixture",
+            "price": 99950.02498750626,
+            "timestamp": 1792713600000
+          }
+        ]
+      },
+      {
+        "id": "exit-2",
+        "now": 1792713612000,
+        "origin": "deterministic-test",
+        "market": {
+          "id": "test-condition",
+          "title": "Bitcoin Up or Down — deterministic test",
+          "status": "open",
+          "end": 1792713900000,
+          "verified": true,
+          "negRisk": false,
+          "tokens": [
+            "test-up",
+            "test-down"
+          ],
+          "labels": [
+            "Up",
+            "Down"
+          ],
+          "fee": {
+            "mode": "reserve",
+            "curveRate": 0.07,
+            "notionalRate": 0
+          }
+        },
+        "books": [
+          {
+            "token": "test-up",
+            "timestamp": 1792713612000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.9,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.898,
+                "size": 100
+              }
+            ]
+          },
+          {
+            "token": "test-down",
+            "timestamp": 1792713612000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.1,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.098,
+                "size": 100
+              }
+            ]
+          }
+        ],
+        "reference": {
+          "symbol": "BTC/USDT",
+          "source": "fixture",
+          "price": 100000,
+          "timestamp": 1792713612000
+        },
+        "referenceHistory": [
+          {
+            "symbol": "BTC/USDT",
+            "source": "fixture",
+            "price": 99950.02498750626,
+            "timestamp": 1792713602000
+          }
+        ]
+      }
+    ],
+    "expectedEvents": [
+      {
+        "index": 0,
+        "id": "directional-1",
+        "now": 1792713600000,
+        "marketId": "test-condition",
+        "action": "BUY",
+        "leg": 0,
+        "label": "Up",
+        "quote": {
+          "side": "buy",
+          "requested": 10,
+          "shares": 3,
+          "gross": 2.853,
+          "fees": 0.0098,
+          "total": 2.8628,
+          "vwap": 0.9510000000000001,
+          "fills": [
+            {
+              "size": 3,
+              "price": 0.951,
+              "fee": 0.0098,
+              "bookPrice": 0.95
+            }
+          ]
+        },
+        "signal": {
+          "moveBps": 4.999999999999449,
+          "from": 1792713590000,
+          "to": 1792713600000,
+          "leg": 0,
+          "spanMs": 10000
+        },
+        "netEdge": null
+      },
+      {
+        "index": 1,
+        "id": "partial-exit",
+        "now": 1792713610000,
+        "marketId": "test-condition",
+        "action": "EXIT",
+        "reason": "PARTIAL_EXIT",
+        "quote": {
+          "side": "sell",
+          "requested": 3,
+          "shares": 1,
+          "gross": 0.907,
+          "fees": 0.006,
+          "total": 0.901,
+          "vwap": 0.907,
+          "fills": [
+            {
+              "size": 1,
+              "price": 0.907,
+              "fee": 0.006,
+              "bookPrice": 0.908
+            }
+          ]
+        },
+        "realized": -0.053267,
+        "remainingShares": 2
+      },
+      {
+        "index": 2,
+        "id": "exit-2",
+        "now": 1792713612000,
+        "marketId": "test-condition",
+        "action": "EXIT",
+        "reason": "STOP_LOSS",
+        "quote": {
+          "side": "sell",
+          "requested": 2,
+          "shares": 2,
+          "gross": 1.794,
+          "fees": 0.013,
+          "total": 1.781,
+          "vwap": 0.897,
+          "fills": [
+            {
+              "size": 2,
+              "price": 0.897,
+              "fee": 0.013,
+              "bookPrice": 0.898
+            }
+          ]
+        },
+        "realized": -0.127533,
+        "remainingShares": 0
+      }
+    ],
+    "expectedReport": {
+      "cash": 999.8192,
+      "realized": -0.1808,
+      "openCost": 0,
+      "liquidationMarkPnl": -0.1808,
+      "openPositions": 0,
+      "positions": [
+        {
+          "id": "test-condition",
+          "title": "Bitcoin Up or Down — deterministic test",
+          "tokens": [
+            "test-up",
+            "test-down"
+          ],
+          "leg": 0,
+          "label": "Up",
+          "shares": 0,
+          "cost": 0,
+          "fee": {
+            "mode": "reserve",
+            "curveRate": 0.07,
+            "notionalRate": 0
+          },
+          "config": {
+            "bankroll": 1000,
+            "shares": 10,
+            "slippage": 0.001,
+            "participation": 0.25,
+            "maxAgeMs": 5000,
+            "maxSkewMs": 2000,
+            "futureMs": 500,
+            "marketBudget": 20,
+            "openBudget": 100,
+            "minRemainingMs": 45000,
+            "holdMs": 30000,
+            "stopFraction": 0.02,
+            "minMoveBps": 2,
+            "minSignalMs": 8000,
+            "maxSignalMs": 15000,
+            "minAsk": 0.9,
+            "maxAsk": 0.985,
+            "minWinningSurplus": 0.005,
+            "modelHaircut": 0.03,
+            "minModelEdge": 0.05,
+            "minCandles": 60
+          },
+          "enteredAt": 1792713600000,
+          "realized": -0.1808,
+          "settled": false,
+          "exiting": true,
+          "liquidationValue": 0,
+          "liquidatableShares": 0,
+          "unfilledExitShares": 0,
+          "conditionalWinningSurplus": 0
+        }
+      ],
+      "events": 3
+    }
+  },
+  {
+    "id": "ox-no-move",
+    "strategy": "ox",
+    "title": "Price alone is not the signal",
+    "snapshots": [
+      {
+        "id": "directional-1",
+        "now": 1792713600000,
+        "origin": "deterministic-test",
+        "market": {
+          "id": "test-condition",
+          "title": "Bitcoin Up or Down — deterministic test",
+          "status": "open",
+          "end": 1792713900000,
+          "verified": true,
+          "negRisk": false,
+          "tokens": [
+            "test-up",
+            "test-down"
+          ],
+          "labels": [
+            "Up",
+            "Down"
+          ],
+          "fee": {
+            "mode": "reserve",
+            "curveRate": 0.07,
+            "notionalRate": 0
+          }
+        },
+        "books": [
+          {
+            "token": "test-up",
+            "timestamp": 1792713600000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.95,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.948,
+                "size": 100
+              }
+            ]
+          },
+          {
+            "token": "test-down",
+            "timestamp": 1792713600000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.05,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.048,
+                "size": 100
+              }
+            ]
+          }
+        ],
+        "reference": {
+          "symbol": "BTC/USDT",
+          "source": "fixture",
+          "price": 100000,
+          "timestamp": 1792713600000
+        },
+        "referenceHistory": [
+          {
+            "symbol": "BTC/USDT",
+            "source": "fixture",
+            "price": 99998.00003999921,
+            "timestamp": 1792713590000
+          }
+        ]
+      }
+    ],
+    "expectedEvents": [
+      {
+        "index": 0,
+        "id": "directional-1",
+        "now": 1792713600000,
+        "marketId": "test-condition",
+        "action": "SKIP",
+        "reason": "MOVE_TOO_SMALL",
+        "signal": {
+          "moveBps": 0.1999999999990898,
+          "from": 1792713590000,
+          "to": 1792713600000,
+          "leg": 0,
+          "spanMs": 10000
+        }
+      }
+    ],
+    "expectedReport": {
+      "cash": 1000,
+      "realized": 0,
+      "openCost": 0,
+      "liquidationMarkPnl": 0,
+      "openPositions": 0,
+      "positions": [],
+      "events": 1
+    }
+  },
+  {
+    "id": "ox-fees",
+    "strategy": "ox",
+    "title": "Costs exceed the winning payout",
+    "snapshots": [
+      {
+        "id": "directional-1",
+        "now": 1792713600000,
+        "origin": "deterministic-test",
+        "market": {
+          "id": "test-condition",
+          "title": "Bitcoin Up or Down — deterministic test",
+          "status": "open",
+          "end": 1792713900000,
+          "verified": true,
+          "negRisk": false,
+          "tokens": [
+            "test-up",
+            "test-down"
+          ],
+          "labels": [
+            "Up",
+            "Down"
+          ],
+          "fee": {
+            "mode": "reserve",
+            "curveRate": 0.07,
+            "notionalRate": 0.1
+          }
+        },
+        "books": [
+          {
+            "token": "test-up",
+            "timestamp": 1792713600000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.95,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.948,
+                "size": 100
+              }
+            ]
+          },
+          {
+            "token": "test-down",
+            "timestamp": 1792713600000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.05,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.048,
+                "size": 100
+              }
+            ]
+          }
+        ],
+        "reference": {
+          "symbol": "BTC/USDT",
+          "source": "fixture",
+          "price": 100000,
+          "timestamp": 1792713600000
+        },
+        "referenceHistory": [
+          {
+            "symbol": "BTC/USDT",
+            "source": "fixture",
+            "price": 99950.02498750626,
+            "timestamp": 1792713590000
+          }
+        ]
+      }
+    ],
+    "expectedEvents": [
+      {
+        "index": 0,
+        "id": "directional-1",
+        "now": 1792713600000,
+        "marketId": "test-condition",
+        "action": "SKIP",
+        "reason": "COST_EXCEEDS_WINNING_PAYOUT",
+        "signal": {
+          "moveBps": 4.999999999999449,
+          "from": 1792713590000,
+          "to": 1792713600000,
+          "leg": 0,
+          "spanMs": 10000
+        },
+        "quote": {
+          "side": "buy",
+          "requested": 10,
+          "shares": 10,
+          "gross": 9.51,
+          "fees": 0.951,
+          "total": 10.461,
+          "vwap": 0.951,
+          "fills": [
+            {
+              "size": 10,
+              "price": 0.951,
+              "fee": 0.951,
+              "bookPrice": 0.95
+            }
+          ]
+        }
+      }
+    ],
+    "expectedReport": {
+      "cash": 1000,
+      "realized": 0,
+      "openCost": 0,
+      "liquidationMarkPnl": 0,
+      "openPositions": 0,
+      "positions": [],
+      "events": 1
+    }
+  },
+  {
+    "id": "ox-stale",
+    "strategy": "ox",
+    "title": "Stale external price rejected",
+    "snapshots": [
+      {
+        "id": "stale",
+        "now": 1792713600000,
+        "origin": "deterministic-test",
+        "market": {
+          "id": "test-condition",
+          "title": "Bitcoin Up or Down — deterministic test",
+          "status": "open",
+          "end": 1792713900000,
+          "verified": true,
+          "negRisk": false,
+          "tokens": [
+            "test-up",
+            "test-down"
+          ],
+          "labels": [
+            "Up",
+            "Down"
+          ],
+          "fee": {
+            "mode": "reserve",
+            "curveRate": 0.07,
+            "notionalRate": 0
+          }
+        },
+        "books": [
+          {
+            "token": "test-up",
+            "timestamp": 1792713600000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.95,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.948,
+                "size": 100
+              }
+            ]
+          },
+          {
+            "token": "test-down",
+            "timestamp": 1792713600000,
+            "source": "fixture",
+            "synthetic": false,
+            "asks": [
+              {
+                "price": 0.05,
+                "size": 100
+              }
+            ],
+            "bids": [
+              {
+                "price": 0.048,
+                "size": 100
+              }
+            ]
+          }
+        ],
+        "reference": {
+          "symbol": "BTC/USDT",
+          "source": "fixture",
+          "price": 100000,
+          "timestamp": 1792713591000
+        },
+        "referenceHistory": [
+          {
+            "symbol": "BTC/USDT",
+            "source": "fixture",
+            "price": 99950.02498750626,
+            "timestamp": 1792713590000
+          }
+        ]
+      }
+    ],
+    "expectedEvents": [
+      {
+        "index": 0,
+        "id": "stale",
+        "now": 1792713600000,
+        "marketId": "test-condition",
+        "action": "SKIP",
+        "reason": "STALE_REFERENCE"
+      }
+    ],
+    "expectedReport": {
+      "cash": 1000,
+      "realized": 0,
+      "openCost": 0,
+      "liquidationMarkPnl": 0,
+      "openPositions": 0,
+      "positions": [],
+      "events": 1
+    }
+  }
+]
