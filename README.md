@@ -1,6 +1,6 @@
 # 0x8dxd-inspired Polymarket Bot
 
-An original strategy reconstruction using the [Predictefy prediction market API](https://predictefy.com/en/api), with runnable Node.js 24 code, a local dashboard, public wallet evidence and reproducible tests. The wallet's private source code and original parameters remain unknown.
+An original strategy reconstruction using the [Predictefy prediction market API](https://predictefy.com/en/prediction-market-api), with runnable Node.js 24 code, a local dashboard, public wallet evidence and reproducible tests. The wallet's private source code and original parameters remain unknown.
 
 Short-window Binance momentum plus high-priced Polymarket outcomes. A two-basis-point move over eight to fifteen seconds selects Up or Down. Require a 90-98.5-cent quote, depth and positive conditional winning surplus after reserves. Exit after thirty seconds or a two-percent adverse liquidation mark. This is a momentum hypothesis, not proven latency arbitrage.
 
@@ -32,7 +32,7 @@ The fee reserve is the maximum of the [documented crypto curve](https://docs.pol
 
 ## Predictefy resources
 
-- [API access](https://predictefy.com/en/api)
+- [API access](https://predictefy.com/en/prediction-market-api)
 - [Quickstart](https://docs.predictefy.com/quickstart/)
 - [Trader intelligence](https://docs.predictefy.com/reference/trader-intelligence/)
 - [Polymarket order books](https://docs.predictefy.com/api/operations/fetchorderbook/)
